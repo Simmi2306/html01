@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Marathon</title>
+    <style>
+#div1{
+  background-color: white;
+  display: flex;
+  height:90px ;
+  width: 100%;
+}
+#div11{
+  background-color: white;
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  float: left;
+  height: 80px;
+}
+#div12{
+  background-color: white;
+  height: 60px;
+  width: 800px;
+  margin-left: 120px;
+  margin-right: 0px;
+  margin-top: 8px;
+  margin-bottom:0px ;
+}
+#search{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 26px;
+  width: 180px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  font-size: 15px;
+}
+#from{
+
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 26px;
+  width: 140px;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  font-size: 15px;
+}
+#to{
+  
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 26px;
+  width: 140px;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  font-size: 15px;
+  
+}
+#submit{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 47px;
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  background-color: rgb(82, 209, 168);
+  color: white;
+  font-size: 15px;
+}
+#div13{
+background-color: white;
+margin-left: 100px;
+margin-right: 10px;
+margin-top: 30px;
+}
+
+#div13 a{
+text-decoration: none;
+font-size: 20px;
+color: gray;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#div2{
+background-color: rgb(244, 244, 244);
+height:50px ;
+width: 100%;
+}
+#div21{
+padding: 10px;
+margin-left: 220px;
+}
+#div21 a{
+text-decoration: none;
+padding: 20px;
+font-size: 20px;
+color: gray;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#div21 ul{
+list-style-type: none;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+overflow: hidden;
+}
+#div21 li{
+float: left;
+}
+#div21 a:hover{
+  background-color: black;
+  color: white;
+}
+#div31{
+    display: flex;
+}
+#div311{
+    margin-left: 250px;
+}
+#div312{
+    margin-left: 480px;
+}
+#show{
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  font-size: 19px;
+  background-color:  rgb(82, 209, 168);
+}
+#div32{
+    margin-left: 250px;
+    margin-bottom: 15px;
+}
+#div33{
+    margin-left: 250px;
+}
+#div4{
+    margin-left: 250px;
+    
+}
+#div42{
+    display: flex;
+}
+#div421{
+    width: 650px;
+    font-size: 20px;
+}
+#div422{
+    border: 2px solid white;
+    margin-left: 90px;
+    height: 300px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#div422:hover{
+  transform: scale(1.01);
+  box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+  z-index: index 2;
+  }
+#div5{
+  margin-left: 240px;
+  display: flex;
+}
+#div52{
+  margin-top: 40px;
+  margin-left: 145px;
+}
+#div12t{
+background-color: rgb(235, 238, 239);
+text-align: center;
+padding: 40px;
+}
+#div13r{
+display: flex;
+margin-left: 150px;
+
+}
+#div13r1{
+border: 2px solid white;
+margin-top: 20px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r2{
+border: 2px solid white;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r3{
+border: 2px solid white;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r4{
+border: 2px solid white;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r5{
+  border: 2px solid white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 20px;
+  height: 300px;
+  width: 200px;
+  
+}
+#div13r2 a{
+text-decoration: none;
+color: rgb(54, 54, 54);
+}
+#div13r3 a{
+text-decoration: none;
+color: rgb(54, 54, 54);
+}
+#div13r4 a{
+text-decoration: none;
+color: rgb(54, 54, 54);
+}
+#div13r5 a{
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+#div14{
+text-align: center;
+display: flex;
+
+}
+#div141{
+  margin-left: 500px;
+}
+#div142{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+#div15{
+  text-align: center;
+}
+#emailsubmit{
+border-radius: 5px;
+padding: 2px;
+height: 30px;
+width: 350px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border: 1px gray solid;
+color: black;
+
+}
+#subscribe{
+border-radius: 5px;
+padding: 2px;
+height: 35px;
+width: 100px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgb(82, 209, 168);
+border: 1px gray solid;
+color: white;
+
+}
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div11">
+          <img src="website img/logo.png" height="80px" width="240px" alt="no">
+        </div>
+        <div id="div12">
+          <form>
+            <input type="text" id="search"  name="firstsearch" placeholder="Search race or location">
+            <input placeholder="From &#128198;" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="from" /> 
+            <input placeholder="To &#128198;" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="to" />
+                  
+            <button type="submit" id="submit" >Search</button>
+          </form>
+        </div>
+        <div id="div13"> 
+          <a href="signup.html">SignUp</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="login.html">LogIn</a>
+        </div>
+      </div>
+    
+        
+      <div id="div2">
+        <div id="div21">
+           <ul>
+             <li><a href="FullMarathon.com">Full Marathons</a></li>
+             <li><a href="halfMarathon.com">Half Marathons</a></li>
+             <li><a href="10kmruns.com">10km Runs</a></li>
+             <li><a href="5kmruns.com">5km Runs</a></li>
+             <li><a href="Ultra.com">Ultra</a></li>
+             <li><a href="trail.com">Trail</a></li>
+             <li><a href="VirtualRuns.com">Virtual Runs</a></li>
+             <li><a href="others.com">Others</a></li>
+             <li><a href="Specials.com">Specials</a></li>
+           </ul>
+        </div>
+      </div>
+      <div id="div3">
+        <div id="div31">
+            <div id="div311">
+                <h1>Bengaluru Midnight Marathon</h1>
+            </div>
+            <div id="div312">
+                <button type="submit" id="show" >Available</button>
+            </div>
+        </div>
+        <div id="div32">
+            <img src="inside img/spotdetail2.png" height="40px" alt="no">
+        </div>
+        <div id="div33">
+            <img src="inside img/nightmath.jpg" height="500px" alt="no">
+        </div>
+      </div>
+      <div id="div4">
+        <div id="div41">
+            <h2>About</h2>
+        </div>
+        <div id="div42">
+            <div id="div421">
+                <h2>Bengaluru Midnight Marathon</h2>
+                <p>The Bengaluru Midnight Marathon is a night-time running event in Bangalore, India that raises money for social causes:The Bengaluru Midnight Marathon is Asia's only midnight marathon. It's a fundraising event for the Rotary Bangalore IT Corridor (RBITC), which supports social service projects such as education, healthcare, and the environment.The Rotary Bangalore IT Corridor organized the first midnight marathon in the world on May 19, 2007.The event includes a variety of races, including the Rotary 5K Run, which offers prize money awards for men and women in four age categories. The event also features cultural performances, a pet-a-thon, and musical performances.</p>
+            </div>
+            <div id="div422">
+              <a href="checkout.html"><img src="inside img/spotprice2.png" height="300px" alt="no"></a>
+            </div>
+        </div>
+      </div>
+       <div id="div5">
+        <div id="div51">
+          <img src="inside img/include.png" height="450px" alt="no">
+        </div>
+        <div id="div52">
+          <img src="inside img/elements.png" height="90px" alt="no">
+        </div>
+      </div>
+      <div id="div12t">
+        <h2>Subscribe to the Run Club's Socity</h2>
+        <center>
+        <img src="website img/end.png"  height="40px" width="750px" alt="no"><br><br>
+        </center>
+        <input type="email" id="emailsubmit" name="myemail" placeholder="Email" required>
+        <button type="submit" id="subscribe" >Subscribe</button>
+        <p><input type="checkbox">I have read and accept World's Marathons <b>Terms of Service</b><br> and Privacy Policy and consent to the processing of personal <br>data.</p>
+      </div>
+      <div id="div13r">
+        <div id="div13r1">
+          <img src="website img/halflogo.png" height="50px" alt="no">
+        </div>
+        <div id="div13r2">
+          <h3>Support</h3><br>
+          <a href="helpcenter">Help center</a><br><br>
+          <a href="termsofservice">Terms of service</a><br><br>
+          <a href="privacypolicy">Privacy policy</a><br><br>
+          <a href="cookie policy">Cookie policy</a><br><br>
+          <a href="gdpr">GDPR</a>
+        </div>
+        <div id="div13r3">
+          <h3>The company</h3><br>
+          <a href="aboutus">About Us</a><br><br>
+          <a href="news">News</a><br><br>
+        </div>
+        <div id="div13r4">
+          <h3>Organiser</h3><br>
+          <a href="signup.html">Sign Up</a><br><br>
+          <a href="login.html">Log in</a><br><br>
+          <a href="oursolution"></a><br><br>
+        </div>
+        <div id="div13r5">
+          <h3>Settings</h3><br>
+          <a href="english">&#127760;English</a><br><br>
+          <a href="eur">&#128178;EUR</a><br><br>
+          <a href="meter">&#128207;Metric</a><br><br>
+        </div>
+      </div>
+      <div id="div14">
+        <div id="div141">
+          <h3>We Accept</h3>
+        </div>
+        <div id="div142">
+          <img src="website img/cash.png" height="40px" alt="no">
+        </div>
+      </div>
+        <div id="div15">
+        <p>&copy; 2024 Runclub.com is a World's Sports Group owned service and brand. All rights reserved.</p>
+      </div>
+      
+</body>
+</html>

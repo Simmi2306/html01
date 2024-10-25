@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+#div1{
+  background-color: white;
+  display: flex;
+  height:90px ;
+  width: 100%;
+}
+#div11{
+  background-color: white;
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  float: left;
+  height: 80px;
+}
+#div12{
+  background-color: white;
+  height: 60px;
+  width: 800px;
+  margin-left: 120px;
+  margin-right: 0px;
+  margin-top: 8px;
+  margin-bottom:0px ;
+}
+#search{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 26px;
+  width: 180px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  font-size: 15px;
+}
+#from{
+
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 26px;
+  width: 140px;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  font-size: 15px;
+}
+#to{
+  
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 26px;
+  width: 140px;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  font-size: 15px;
+  
+}
+#submit{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 47px;
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  background-color: rgb(82, 209, 168);
+  color: white;
+  font-size: 15px;
+}
+#div13{
+background-color: white;
+margin-left: 100px;
+margin-right: 10px;
+margin-top: 30px;
+}
+
+#div13 a{
+text-decoration: none;
+font-size: 20px;
+color: gray;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#div2{
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+#div12t{
+background-color: rgb(235, 238, 239);
+text-align: center;
+padding: 40px;
+}
+#div13r{
+display: flex;
+margin-left: 150px;
+
+}
+#div13r1{
+border: 2px solid white;
+margin-top: 20px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r2{
+border: 2px solid white;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r3{
+border: 2px solid white;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r4{
+border: 2px solid white;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r5{
+  border: 2px solid white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 20px;
+  height: 300px;
+  width: 200px;
+  
+}
+#div13r2 a{
+text-decoration: none;
+color: rgb(54, 54, 54);
+}
+#div13r3 a{
+text-decoration: none;
+color: rgb(54, 54, 54);
+}
+#div13r4 a{
+text-decoration: none;
+color: rgb(54, 54, 54);
+}
+#div13r5 a{
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+#div14{
+text-align: center;
+display: flex;
+
+}
+#div141{
+  margin-left: 500px;
+}
+#div142{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+#div15{
+  text-align: center;
+}
+#emailsubmit{
+border-radius: 5px;
+padding: 2px;
+height: 30px;
+width: 350px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border: 1px gray solid;
+color: black;
+
+}
+#subscribe{
+border-radius: 5px;
+padding: 2px;
+height: 35px;
+width: 100px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgb(82, 209, 168);
+border: 1px gray solid;
+color: white;
+
+}
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div11">
+          <img src="website img/logo.png" height="80px" width="240px" alt="no">
+        </div>
+        <div id="div12">
+          <form>
+            <input type="text" id="search"  name="firstsearch" placeholder="Search race or location">
+            <input placeholder="From &#128198;" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="from" /> 
+            <input placeholder="To &#128198;" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="to" />
+                  
+            <button type="submit" id="submit" >Search</button>
+          </form>
+        </div>
+        <div id="div13"> 
+          <a href="signup.html">SignUp</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="login.html">LogIn</a>
+        </div>
+      </div>
+      <div id="div2">
+        <img src="website img/run2.png" height="380px" alt="no">
+        <h2>About Us</h2>
+        <p>A Marathon website can serve a variety of purposes, from providing information about the event to facilitating registration and engagement with participants. Here are some key features that would be beneficial for a marathon website:<br>
+
+            <b> Event Information</b><br>
+            Race Details: Date, time, location, and distance options (e.g., full marathon, half marathon, 10K).
+            Course Map: Interactive map showing the race route, including elevation changes and key landmarks.
+            Schedule: Timeline of events, including packet pickup, pre-race briefings, and post-race celebrations.<br>
+            <b>2. Registration</b><br>
+            Online Registration: Easy-to-use form for participants to register for the race.
+            Payment Gateway: Secure payment options for registration fees.
+            Waiver and Policies: Digital acceptance of liability waivers and race policies.<br>
+            <b>3. Participant Resources</b><br>
+            Training Plans: Suggested training schedules for various skill levels.
+            Nutrition Tips: Guidance on diet and hydration leading up to the race.
+            FAQs: Answers to common questions about the race, registration, and logistics.<br>
+            <b>4. Community Engagement</b><br>
+            Social Media Integration: Links to social media platforms for sharing experiences and updates.
+            Blog/News Section: Articles about training, race day tips, and participant stories.
+            Forums/Discussion Boards: Space for participants to connect and share advice.<br>
+            <b>5. Live Tracking and Results</b><br>
+            Live Race Tracking: Real-time tracking of participants during the race.
+            Results Archive: Post-race results, including finish times and rankings.
+            Photo Gallery: Photos from the event for participants to view and share.<br>
+            <b>6. Merchandise and Sponsorship</b><br>
+            Event Merchandise: Online store for race-related gear (e.g., shirts, hats).
+            Sponsorship Opportunities: Information for businesses interested in sponsoring the event.<br>
+            <b>7. Accessibility Features</b><br>
+            Mobile-Friendly Design: Responsive layout for easy access on various devices.
+            Language Options: Multilingual support for diverse participants.
+            These features can enhance the user experience, encourage participation, and foster a sense of community among runners and supporters. If you need more details on any specific feature, feel free to ask!
+        </p>
+        <h2>Made By</h2>
+        <h3>Sakshi Singh (Student at LPU)</h3>
+      </div>
+      <div id="div12t">
+        <h2>Subscribe to the Run Club's Socity</h2>
+        <center>
+        <img src="website img/end.png"  height="40px" width="750px" alt="no"><br><br>
+        </center>
+        <input type="email" id="emailsubmit" name="myemail" placeholder="Email" required>
+        <button type="submit" id="subscribe" >Subscribe</button>
+        <p><input type="checkbox">I have read and accept World's Marathons <b>Terms of Service</b><br> and Privacy Policy and consent to the processing of personal <br>data.</p>
+      </div>
+      <div id="div13r">
+        <div id="div13r1">
+          <img src="website img/halflogo.png" height="50px" alt="no">
+        </div>
+        <div id="div13r2">
+          <h3>Support</h3><br>
+          <a href="helpcenter">Help center</a><br><br>
+          <a href="termsofservice">Terms of service</a><br><br>
+          <a href="privacypolicy">Privacy policy</a><br><br>
+          <a href="cookie policy">Cookie policy</a><br><br>
+          <a href="gdpr">GDPR</a>
+        </div>
+        <div id="div13r3">
+          <h3>The company</h3><br>
+          <a href="aboutus">About Us</a><br><br>
+          <a href="news">News</a><br><br>
+        </div>
+        <div id="div13r4">
+          <h3>Organiser</h3><br>
+          <a href="signup.html">Sign Up</a><br><br>
+          <a href="login.html">Log in</a><br><br>
+          <a href="oursolution"></a><br><br>
+        </div>
+        <div id="div13r5">
+          <h3>Settings</h3><br>
+          <a href="english">&#127760;English</a><br><br>
+          <a href="eur">&#128178;EUR</a><br><br>
+          <a href="meter">&#128207;Metric</a><br><br>
+        </div>
+      </div>
+      <div id="div14">
+        <div id="div141">
+          <h3>We Accept</h3>
+        </div>
+        <div id="div142">
+          <img src="website img/cash.png" height="40px" alt="no">
+        </div>
+      </div>
+        <div id="div15">
+        <p>&copy; 2024 Runclub.com is a World's Sports Group owned service and brand. All rights reserved.</p>
+      </div>
+</body>
+</html>

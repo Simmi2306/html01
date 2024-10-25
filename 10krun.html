@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10K Run</title>
+    <style>
+#div1{
+  background-color: white;
+  display: flex;
+  height:90px ;
+  width: 100%;
+}
+#div11{
+  background-color: white;
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  float: left;
+  height: 80px;
+}
+#div12{
+  background-color: white;
+  height: 60px;
+  width: 800px;
+  margin-left: 120px;
+  margin-right: 0px;
+  margin-top: 8px;
+  margin-bottom:0px ;
+}
+#search{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 26px;
+  width: 180px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  font-size: 15px;
+}
+#from{
+
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 26px;
+  width: 140px;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  font-size: 15px;
+}
+#to{
+  
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 26px;
+  width: 140px;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  font-size: 15px;
+  
+}
+#submit{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 47px;
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px gray solid;
+  background-color: rgb(82, 209, 168);
+  color: white;
+  font-size: 15px;
+}
+#div13{
+background-color: white;
+margin-left: 100px;
+margin-right: 10px;
+margin-top: 30px;
+}
+
+#div13 a{
+text-decoration: none;
+font-size: 20px;
+color: gray;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#div2{
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+#div12t{
+background-color: rgb(235, 238, 239);
+text-align: center;
+padding: 40px;
+}
+#div13r{
+display: flex;
+margin-left: 150px;
+
+}
+#div13r1{
+border: 2px solid white;
+margin-top: 20px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r2{
+border: 2px solid white;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r3{
+border: 2px solid white;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r4{
+border: 2px solid white;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 20px;
+height: 300px;
+width: 200px;
+
+}
+#div13r5{
+  border: 2px solid white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 20px;
+  height: 300px;
+  width: 200px;
+  
+}
+#div13r2 a{
+text-decoration: none;
+color: rgb(54, 54, 54);
+}
+#div13r3 a{
+text-decoration: none;
+color: rgb(54, 54, 54);
+}
+#div13r4 a{
+text-decoration: none;
+color: rgb(54, 54, 54);
+}
+#div13r5 a{
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+#div14{
+text-align: center;
+display: flex;
+
+}
+#div141{
+  margin-left: 500px;
+}
+#div142{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+#div15{
+  text-align: center;
+}
+#emailsubmit{
+border-radius: 5px;
+padding: 2px;
+height: 30px;
+width: 350px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border: 1px gray solid;
+color: black;
+
+}
+#subscribe{
+border-radius: 5px;
+padding: 2px;
+height: 35px;
+width: 100px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgb(82, 209, 168);
+border: 1px gray solid;
+color: white;
+
+}
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div11">
+          <img src="website img/logo.png" height="80px" width="240px" alt="no">
+        </div>
+        <div id="div12">
+          <form>
+            <input type="text" id="search"  name="firstsearch" placeholder="Search race or location">
+            <input placeholder="From &#128198;" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="from" /> 
+            <input placeholder="To &#128198;" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="to" />
+                  
+            <button type="submit" id="submit" >Search</button>
+          </form>
+        </div>
+        <div id="div13"> 
+          <a href="signup.html">SignUp</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="login.html">LogIn</a>
+        </div>
+      </div>
+      <div id="div2">
+        <img src="website img/run2.png" height="380px" alt="no">
+        <h2>10K Run</h2>
+        <p>A 10K run is a long-distance road race that covers a distance of 10 kilometers or 6.2 miles. It's a popular race distance for runners of all levels, and is often a next step for runners who have completed a 5K race: <br>
+            <b><u>Distance:</u></b>A 10K is twice the distance of a 5K race. <br>
+            <b><u>Difficulty:</u></b> A 10K is a good challenge without being as daunting as a marathon.<br> 
+            <b><u>Popularity:</u></b> A 10K is one of the most common types of road running events. <br>
+            <b><u>Training:</u></b> Proper training and preparation can help runners achieve their goals. <br>
+            <b><u>Next steps:</u></b> A 10K can be part of a larger training plan for a half marathon or full marathon.<br>
+        </p>
+      </div>
+      <div id="div12t">
+        <h2>Subscribe to the Run Club's Socity</h2>
+        <center>
+        <img src="website img/end.png"  height="40px" width="750px" alt="no"><br><br>
+        </center>
+        <input type="email" id="emailsubmit" name="myemail" placeholder="Email" required>
+        <button type="submit" id="subscribe" >Subscribe</button>
+        <p><input type="checkbox">I have read and accept World's Marathons <b>Terms of Service</b><br> and Privacy Policy and consent to the processing of personal <br>data.</p>
+      </div>
+      <div id="div13r">
+        <div id="div13r1">
+          <img src="website img/halflogo.png" height="50px" alt="no">
+        </div>
+        <div id="div13r2">
+          <h3>Support</h3><br>
+          <a href="helpcenter">Help center</a><br><br>
+          <a href="termsofservice">Terms of service</a><br><br>
+          <a href="privacypolicy">Privacy policy</a><br><br>
+          <a href="cookie policy">Cookie policy</a><br><br>
+          <a href="gdpr">GDPR</a>
+        </div>
+        <div id="div13r3">
+          <h3>The company</h3><br>
+          <a href="aboutus">About Us</a><br><br>
+          <a href="news">News</a><br><br>
+        </div>
+        <div id="div13r4">
+          <h3>Organiser</h3><br>
+          <a href="signup.html">Sign Up</a><br><br>
+          <a href="login.html">Log in</a><br><br>
+          <a href="oursolution"></a><br><br>
+        </div>
+        <div id="div13r5">
+          <h3>Settings</h3><br>
+          <a href="english">&#127760;English</a><br><br>
+          <a href="eur">&#128178;EUR</a><br><br>
+          <a href="meter">&#128207;Metric</a><br><br>
+        </div>
+      </div>
+      <div id="div14">
+        <div id="div141">
+          <h3>We Accept</h3>
+        </div>
+        <div id="div142">
+          <img src="website img/cash.png" height="40px" alt="no">
+        </div>
+      </div>
+        <div id="div15">
+        <p>&copy; 2024 Runclub.com is a World's Sports Group owned service and brand. All rights reserved.</p>
+      </div>
+</body>
+</html>

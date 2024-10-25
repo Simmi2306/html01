@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        header{
+            display: flex;
+        }
+        #hed1 a{
+            text-decoration: none;
+            font-size: 19px;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #hed2{
+            margin-left: 400px;
+        }
+        #hed3{
+            margin-left: 500px;
+            margin-top: 5px;
+        }
+        #hed3 a{
+            text-decoration: none;
+            font-size: 25px;
+            color: gray;
+        }
+        #div2{
+            margin-top: 0px;
+            text-align: center;
+        }
+        #div2 p{
+            font-size: 20px;
+        }
+        #div4{
+            margin-left: 350px;
+            margin-right: 310px;
+            font-size: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #div4 a{
+            color: black;
+            font-size: 20px;
+            
+        }
+        #grey{
+            background-color: rgb(249, 249, 249);
+        }
+        #div5{
+            margin-top: 20px;
+            margin-left: 350px;
+            margin-right: 310px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+        #i2{
+            width: 360px;
+            padding: 10px;
+            font-size: 17px;
+        }
+        #i3{
+            width: 350px;
+            padding: 10px;
+            font-size: 17px;
+        }
+        #i4{
+            width: 740px;
+            padding: 10px;
+            font-size: 17px;
+        }
+        #i5{
+            width: 360px;
+            padding: 10px;
+            font-size: 17px;
+        }
+        #i6{
+            width: 380px;
+            padding: 10px;
+            font-size: 17px;
+            color: gray;
+        }
+        #i7{
+            width: 360px;
+            padding: 10px;
+            font-size: 17px;
+        }
+        #i8{
+            width: 720px;
+            padding: 10px;
+            font-size: 17px;
+        }
+        #phone{
+            width: 360px;
+            padding: 10px;
+            font-size: 17px;
+        }
+        #address{
+            width: 700px;
+            padding: 20px;
+            font-size: 17px;
+        }
+        #submit{
+            width: 740px;
+            padding: 10px;
+            font-size: 17px;
+            border-radius: 3px;
+            background-color: rgb(82, 209, 168);
+        }
+        #div6{
+            background-color: white;
+            margin-left: 350px;
+            margin-right: 310px;
+            padding: 10px;
+        }
+        #div12t{
+background-color: rgb(235, 238, 239);
+text-align: center;
+padding: 40px;
+}
+
+#div14{
+  text-align: center;
+  display: flex;
+}
+#div141{
+  margin-left: 500px;
+}
+#div142{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+#div15{
+  text-align: center;
+}
+#emailsubmit{
+border-radius: 5px;
+padding: 2px;
+height: 30px;
+width: 350px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border: 1px gray solid;
+color: black;
+
+}
+#subscribe{
+border-radius: 5px;
+padding: 2px;
+height: 35px;
+width: 100px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgb(82, 209, 168);
+border: 1px gray solid;
+color: white;
+
+}
+    </style>
+</head>
+<body>
+    <script>
+        function data(){
+            var a=document.getElementById("i1").value;
+            var b=document.getElementById("i2").value;
+            var c=document.getElementById("i3").value;
+            var d=document.getElementById("i4").value;
+            var e=document.getElementById("i5").value;
+            var e=document.getElementById("i6").value;
+            var f=document.getElementById("i7").value;
+            var g=document.getElementById("i8").value;
+            //empty field show error
+            if(a==""||b==""||c==""||d==""||e==""||f==""||g==""){
+                alert("All fields are mandatory");
+                return false;
+            }
+            else if(f.length<10||f.length>10){
+                alert("Number should be of 10 digit! Please enter valid number");
+                return false;
+            }
+            else if(isNaN(f)){
+                alert("Only Numbers are allowed! Please enter valid number");
+                return false;
+            }
+            else{
+                true;
+            }
+        }
+    </script>
+    <div id="div1">
+    <header>
+        <div id="hed1">
+            <a href="english">&#127760;English</a>&nbsp;&nbsp;
+            <a href="eur">&#128178;EUR</a>&nbsp;&nbsp;
+            <a href="meter">&#128207;Metric</a>
+        </div>
+        <div id="hed2">
+            <img src="website img/logo.png" height="60px" width="180px" alt="no">
+        </div>
+        <div id="hed3">
+            <a href="signup.html">SignUp</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="login.html">LogIn</a>
+        </div>
+    </header>
+    </div>
+    <div id="div2">
+        <p>Registration For</p>
+        <h2>Your Selected Marathon</h2>
+    </div>
+    <div id="grey">
+    <div id="div3">
+        <img src="inside img/checkoutdetails.png" height="110px" alt="no">
+    </div>
+    <div id="div4">
+        &#x1F464; <a href="login.com">login</a> and <a href="signup.html">sign up</a> for a faster checkout
+    </div>
+    <div id="div5">
+        <form onsubmit=" return data()" action="website.html">
+        <h2>Personal Details</h2>
+        Gender: <br><br>
+        <input type="radio" name="mygender" id="i1"> Male 
+        <input type="radio" name="mygender" id="i1"> Female
+        <input type="radio" name="mygender" id="i1"> Others<br><br>
+        <input type="text" placeholder="First Name" id="i2"> 
+        <input type="text" placeholder="Last Name" id="i3"><br><br>
+        <input type="email" placeholder="Email" id="i4"><br> <br>
+        <input type="number" placeholder="Age" id="i5"><br><br>
+        <select id="i6">
+            <option>Tshirt Size</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+        <hr>
+        <h2>Emergency Contact Details</h2>
+        <input type="text" placeholder="Phone Nummber" id="i7"><br><br>
+        <input type="text" placeholder="Address" id="i8"><br><br>
+        <input type="submit" value="Submit now" id="submit">
+        </form>
+    </div>
+    <div id="div6">
+        <p>*Mandatory information</p>
+    </div>
+</div>
+<div id="div12t">
+    <h2>Subscribe to the Run Club's Socity</h2>
+    <center>
+    <img src="website img/end.png"  height="40px" width="750px" alt="no"><br><br>
+    </center>
+    <input type="email" id="emailsubmit" name="myemail" placeholder="Email" required>
+    <button type="submit" id="subscribe" >Subscribe</button>
+    <p><input type="checkbox">I have read and accept Runclub <b>Terms of Service</b><br> and Privacy Policy and consent to the processing of personal <br>data.</p>
+  </div>
+  <div id="div14">
+    <div id="div141">
+      <h3>We Accept</h3>
+    </div>
+    <div id="div142">
+      <img src="website img/cash.png" height="40px" alt="no">
+    </div>
+  </div>
+    <div id="div15">
+    <p>&copy; 2024 Runclub.com is a World's Sports Group owned service and brand. All rights reserved.</p>
+  </div>
+
+    
+</body>
+</html>
